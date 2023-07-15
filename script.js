@@ -18,14 +18,15 @@ function letterCombinations(input) {
 			solution.push(calculatedString);
 			return;
 		}
-		
-	}
-	let currentChar=input[currentIndex];
-	for(let i=0; i<table [currentChar].length;i++){
-		solve(currentIndex +1 ,calculatedString+table[currentChar][i]);
+		let currentChar=input[currentIndex];
+	for(let i=0; i<table[currentChar].length;i++){
+		solve(currentIndex + 1 ,calculatedString + table[currentChar][i]);
 	}
 	solve( 0,"");
 	return solution;
+		
+	}
+	
 }
 
 module.exports = letterCombinations;
