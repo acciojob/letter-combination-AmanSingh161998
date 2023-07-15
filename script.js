@@ -22,7 +22,7 @@ function letterCombinations(input) {
 	}
 	let currentChar=input[currentIndex];
 	for(let i=0; i<table [currentChar].length;i++){
-		solve(currentIndex +1 ,calculatedString+table[currentChar]);
+		solve(currentIndex +1 ,calculatedString+table[currentChar][i]);
 	}
 	solve( 0,"");
 	return solution;
